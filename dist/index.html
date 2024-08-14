@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Planner</title>
+    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans leading-6 p-5" >
+    <h1 class="text-center text-teal-500 text-4xl font-bold	mb-7">Weekly Planner</h1>
+
+    <form id="plannerForm" class="m-auto p-5 rounded-lg max-w-sm">
+        <label class="block mb-2 font-bold" for="dayOfWeek">Select Day:</label>
+        <select id="dayOfWeek" name="dayOfWeek">
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+        </select>
+        <label for="task">Task Description:</label>
+        <textarea id="task" name="task" rows="4" placeholder="Enter task details..."></textarea>
+        <input class=" w-full ease-in-ou text-white p-3 mb-3 bg-teal-500 rounded-md cursor-pointer" type="submit" id="submit" value="Add Task">
+
+        <label for="">
+            <input type="checkbox" id="repeatTask" name="repeatTask">
+            Repeate this task every week
+        </label>
+    </form>
+    
+    <div id="schedule" class="max-w-sm m-auto mt-5">
+        <div id="Monday" class="day">
+            <h3>Monday</h3>
+            <div class="tasks"></div>
+        </div>
+        <div id="Tuesday" class="day">
+            <h3>Tuesday</h3>
+            <div class="tasks"></div>
+        </div>
+        <div id="Wednesday" class="day">
+            <h3>Wednesday</h3>
+            <div class="tasks"></div>
+        </div>
+        <div id="Thursday" class="day">
+            <h3>Thursday</h3>
+            <div class="tasks"></div>
+        </div>
+        <div id="Friday" class="day">
+            <h3>Friday</h3>
+            <div class="tasks"></div>
+        </div>
+        <div id="Saturday" class="day">
+            <h3>Saturday</h3>
+            <div class="tasks"></div>
+        </div>
+        <div id="Sunday" class="day">
+            <h3>Sunday</h3>
+            <div class="tasks"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script></body>
+</html>
